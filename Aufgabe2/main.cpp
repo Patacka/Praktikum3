@@ -5,18 +5,26 @@ using std::endl;
 
 int main()
 {
-	int w{ 1 };
-	int v{ 1 };
-	int a{ 1 };
-	int b{ 1 };
-	int c{ 1 };
+	int hypoqua = 0;
+	int kathequa = 0;
+	int gekathequa = 0;
 
-	for (int counter{ 1 }; counter < 500; counter++)
+
+
+	for (int hypo = 1; hypo <= 500; hypo++)
 	{
-		w++;
-		v* v - w * w = a
-			cout >> a >> endl;
+		for (int kathe = 1; kathe < 500; kathe++)
+		{
+			for (int gekathe = 1; gekathe < 500; gekathe++)
+			{
+				hypoqua = hypo * hypo;
+				kathequa = kathe * kathe;
+				gekathequa = gekathe * gekathe;
+
+				if ((kathequa + gekathequa) == hypoqua)
+				{
+					cout << kathe << "        " << gekathe << "           " << hypo << endl;
+				}
+			}
+		}
 	}
-
-
-}
